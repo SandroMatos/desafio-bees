@@ -1,0 +1,49 @@
+.LoginContainer {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.InputMain {
+  width: 100%;
+  padding: 1.5rem;
+  height: 2.5rem;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  margin: 0.8rem;
+}
+
+.InputMain:focus {
+  outline: 1px solid black;
+}
+
+.LoginButton {
+  padding: 0.8rem 1.3rem;
+  margin: 0.8rem;
+  letter-spacing: 1px;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  color: white;
+  background-color: #5d5fef;
+}
+
+.CheckboxLogin {
+  margin-right: 0.3rem;
+}
+
+.Disable {
+  pointer-events: none;
+  background-color: gray;
+}
