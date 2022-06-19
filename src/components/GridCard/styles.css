@@ -39,6 +39,7 @@
 .CardAddress {
   padding: 0.5rem 0;
   color: #888;
+  margin: 0;
 
   font-size: 1.3rem;
   font-weight: 300;
