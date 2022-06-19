@@ -4,4 +4,10 @@
 
   margin-top: 14vh;
   margin-bottom: 5vh;
+
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, 30rem);
 }

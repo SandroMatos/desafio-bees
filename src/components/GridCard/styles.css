@@ -1,0 +1,45 @@
+.CardContainer {
+  width: 30rem;
+  height: 38vh;
+
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: #ffffff;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CardContainer > svg {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+
+  cursor: pointer;
+}
+
+.CardContainer > svg:hover {
+  transform: scale(1.1);
+}
+
+.ContainerContent {
+  height: 85%;
+  width: 90%;
+}
+
+.CardTitle {
+  color: black;
+
+  margin-bottom: 2%;
+  font-size: 1.5rem;
+}
+
+.CardAddress {
+  padding: 0.5rem 0;
+  color: #888;
+
+  font-size: 1.3rem;
+  font-weight: 300;
+}

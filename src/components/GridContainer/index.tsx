@@ -1,4 +1,5 @@
 import React from "react";
+import GridCard from "../GridCard";
 
 import "./styles.css";
 
@@ -10,7 +11,14 @@ const GridContainer = ({ children }: GridContainerProps) => {
   return (
     //
 
-    <div className="ContainerMain"></div>
+    <div className="ContainerMain">
+      <GridCard />
+      <GridCard />
+      <GridCard />
+      <GridCard />
+      <GridCard />
+      <GridCard />
+    </div>
   );
 };
 
