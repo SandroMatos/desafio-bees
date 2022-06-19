@@ -6,28 +6,37 @@ import { GrAddCircle as AddCircleIcon } from "react-icons/gr";
 import GridCardOption from "../GridCardOptions";
 
 import "./styles.css";
+import { GridCardProps } from "../../constants/components/GridCard/interfaces";
 
-const GridCard = () => {
+const GridCard = ({
+  id,
+  title,
+  endereco1,
+  endereco2,
+  opt1,
+  opt2,
+  opt3,
+}: GridCardProps) => {
   return (
     //
     <div className="CardContainer">
       <TrashIcon />
       <div className="ContainerContent">
-        <h1 className="CardTitle">teste titulo</h1>
-        <p className="CardAddress">teste endereco</p>
-        <p className="CardAddress">teste endereco 2</p>
+        <h1 className="CardTitle">{title}</h1>
+        <p className="CardAddress">{endereco1}</p>
+        <p className="CardAddress">{endereco2}</p>
         <div className="CardOptionsContainer">
           <GridCardOption>
             <GoGraph />
-            Option 1aaaaaaa
+            {opt1}
           </GridCardOption>
           <GridCardOption>
             <GoLocation />
-            Option 2
+            {opt2}
           </GridCardOption>
           <GridCardOption>
             <TelephoneIcon />
-            Option 3
+            {opt3}
           </GridCardOption>
           <GridCardOption>
             <AddCircleIcon />
