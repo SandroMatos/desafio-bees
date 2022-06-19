@@ -1,0 +1,50 @@
+.HomeHeader {
+  height: 8vh;
+
+  background-color: #f2ec54;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 6;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.GoBack {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+.GoBack > svg {
+  color: #3d3d44;
+  width: 2rem;
+  height: 2rem;
+}
+
+.HeaderBack {
+  font-weight: 300;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.HeaderTitle {
+  font-weight: 300;
+  margin-right: 2rem;
+}
+
+@media (max-width: 440px) {
+  .HeaderBack {
+    font-size: 1.5rem;
+  }
+
+  .HeaderTitle {
+    font-size: 1.5rem;
+  }
+}

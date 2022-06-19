@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import Loading from "../components/Loading";
 import LoginProvider from "../contexts/LoginContext/Provider";
+import HomePage from "../pages/Home";
 
 export type RoutesCompProps = {
   children?: React.ReactNode;
@@ -16,7 +17,7 @@ const RoutesComp = ({ children }: RoutesCompProps) => {
       <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/" element={<Login />}></Route>
-          <Route path="/home" element={<h1>Home</h1>}></Route>
+          <Route path="/home" element={<HomePage />}></Route>
         </Routes>
       </Suspense>
     </LoginProvider>
