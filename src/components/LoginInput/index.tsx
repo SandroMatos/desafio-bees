@@ -11,18 +11,16 @@ const InputLogin = ({ children }: InputLoginProps) => {
   const [checkBox, setCheckBox] = useState(false);
 
   const handleInputLogin = (value: string) => {
-    if (!isNaN(parseInt(value.substring(value.length - 1)))) {
-      return;
-    }
-
     let pattern = /^[A-Za-z]+$/;
 
-    if (
-      value.match(pattern) ||
-      value === "" ||
-      value.substring(value.length - 1) === " "
-    ) {
-      setInputLogin(value);
+    if (isNaN(parseInt(value.substring(value.length - 1)))) {
+      if (
+        value.substring(value.length - 1).match(pattern) ||
+        value.substring(value.length - 1) === " " ||
+        value.substring(value.length - 1) === ""
+      ) {
+        setInputLogin(value);
+      }
     }
   };
 

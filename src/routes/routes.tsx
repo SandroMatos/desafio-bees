@@ -3,13 +3,13 @@ import { Route, Routes } from "react-router-dom";
 import Loading from "../components/Loading";
 import CardProvider from "../contexts/CardContext/Provider";
 import LoginProvider from "../contexts/LoginContext/Provider";
-import HomePage from "../pages/Home";
 
 export type RoutesCompProps = {
   children?: React.ReactNode;
 };
 
 const Login = lazy(() => import("../pages/Login"));
+const HomePage = lazy(() => import("../pages/Home"));
 
 const RoutesComp = ({ children }: RoutesCompProps) => {
   return (

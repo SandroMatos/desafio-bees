@@ -54,3 +54,20 @@
   justify-content: left;
   align-items: center;
 }
+
+@media (max-width: 515px) {
+  .CardContainer {
+    overflow-y: auto;
+    width: 25rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .CardAddress {
+    font-size: 1.2rem;
+  }
+
+  .CardContainer {
+    width: 20rem;
+  }
+}
