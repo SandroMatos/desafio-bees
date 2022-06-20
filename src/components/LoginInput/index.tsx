@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import LoginContext from "../../contexts/LoginContext/Context";
+import verifyChar from "../../utils/verifyInputChars";
 import "./styles.css";
 
 export type InputLoginProps = {
@@ -11,16 +12,10 @@ const InputLogin = ({ children }: InputLoginProps) => {
   const [checkBox, setCheckBox] = useState(false);
 
   const handleInputLogin = (value: string) => {
-    let pattern = /^[A-Za-z]+$/;
+    const char = verifyChar(value.substring(value.length - 1));
 
-    if (isNaN(parseInt(value.substring(value.length - 1)))) {
-      if (
-        value.substring(value.length - 1).match(pattern) ||
-        value.substring(value.length - 1) === " " ||
-        value.substring(value.length - 1) === ""
-      ) {
-        setInputLogin(value);
-      }
+    if (char || char === "") {
+      setInputLogin(value);
     }
   };
 
@@ -31,7 +26,7 @@ const InputLogin = ({ children }: InputLoginProps) => {
         className="InputMain"
         value={inputLogin}
         onChange={(e) => handleInputLogin(e.target.value)}
-        maxLength={25}
+        maxLength={15}
         data-testid="InputText"
         pattern={"^[a-zA-Z\b]+$"}
         required

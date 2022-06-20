@@ -1,0 +1,34 @@
+.inputSearch {
+  background-color: #fffcee;
+  border: none;
+  height: 1.8rem;
+  width: 17rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.inputSearch:focus {
+  outline: 1px solid black;
+}
+
+@media (max-width: 720px) {
+  .inputSearch {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 555px) {
+  .inputSearch {
+    width: 25vw;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 385px) {
+  .inputSearch {
+    width: 20vw;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.5rem;
+  }
+}
