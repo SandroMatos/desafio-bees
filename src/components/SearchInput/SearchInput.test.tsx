@@ -26,7 +26,7 @@ beforeEach(() => {
 });
 
 describe("<SearchInput />", () => {
-  it("should render inputs and button", () => {
+  it("should render input", () => {
     expect(screen.getByTestId("InputText")).toBeInTheDocument();
   });
 
